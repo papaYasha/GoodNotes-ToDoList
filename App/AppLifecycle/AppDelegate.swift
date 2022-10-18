@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  GoodNotes-TDL
-//
-//  Created by student on 18.10.22.
-//
-
 import UIKit
 import CoreData
 

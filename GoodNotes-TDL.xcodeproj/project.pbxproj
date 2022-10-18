@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F08147728FEF1A8002979E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08147528FEF1A8002979E5 /* SceneDelegate.swift */; };
+		3F08148128FEF305002979E5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08148028FEF305002979E5 /* AppCoordinator.swift */; };
+		3F08148828FEF58D002979E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F08148728FEF58D002979E5 /* LaunchScreen.storyboard */; };
 		3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */; };
-		3F54E69B28FEC51A00CD9B10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E69A28FEC51A00CD9B10 /* SceneDelegate.swift */; };
-		3F54E69D28FEC51A00CD9B10 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E69C28FEC51A00CD9B10 /* ViewController.swift */; };
-		3F54E6A028FEC51A00CD9B10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F54E69E28FEC51A00CD9B10 /* Main.storyboard */; };
 		3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E6A128FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld */; };
 		3F54E6A528FEC51C00CD9B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */; };
-		3F54E6A828FEC51C00CD9B10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F54E6A628FEC51C00CD9B10 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F08147528FEF1A8002979E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F08148028FEF305002979E5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3F08148728FEF58D002979E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F54E69528FEC51A00CD9B10 /* GoodNotes-TDL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodNotes-TDL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F54E69A28FEC51A00CD9B10 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F54E69C28FEC51A00CD9B10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F54E69F28FEC51A00CD9B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F54E6A228FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoodNotes_TDL.xcdatamodel; sourceTree = "<group>"; };
 		3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3F54E6A728FEC51C00CD9B10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F54E6A928FEC51C00CD9B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,10 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F08147228FEF167002979E5 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F54E6A128FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		3F08147328FEF17C002979E5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3F08147F28FEF2E0002979E5 /* Info */,
+				3F08147C28FEF265002979E5 /* LaunchScreen */,
+				3F08147B28FEF247002979E5 /* AppLifecycle */,
+				3F08147A28FEF224002979E5 /* AppCoordinator */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3F08147A28FEF224002979E5 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3F08148028FEF305002979E5 /* AppCoordinator.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		3F08147B28FEF247002979E5 /* AppLifecycle */ = {
+			isa = PBXGroup;
+			children = (
+				3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */,
+				3F08147528FEF1A8002979E5 /* SceneDelegate.swift */,
+			);
+			path = AppLifecycle;
+			sourceTree = "<group>";
+		};
+		3F08147C28FEF265002979E5 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3F08148728FEF58D002979E5 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		3F08147F28FEF2E0002979E5 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				3F54E6A928FEC51C00CD9B10 /* Info.plist */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		3F08148228FEF3AF002979E5 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		3F54E68C28FEC51A00CD9B10 = {
 			isa = PBXGroup;
 			children = (
-				3F54E69728FEC51A00CD9B10 /* GoodNotes-TDL */,
+				3F08148228FEF3AF002979E5 /* Assets */,
+				3F08147328FEF17C002979E5 /* App */,
+				3F08147228FEF167002979E5 /* CoreDataModel */,
 				3F54E69628FEC51A00CD9B10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,21 +113,6 @@
 				3F54E69528FEC51A00CD9B10 /* GoodNotes-TDL.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3F54E69728FEC51A00CD9B10 /* GoodNotes-TDL */ = {
-			isa = PBXGroup;
-			children = (
-				3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */,
-				3F54E69A28FEC51A00CD9B10 /* SceneDelegate.swift */,
-				3F54E69C28FEC51A00CD9B10 /* ViewController.swift */,
-				3F54E69E28FEC51A00CD9B10 /* Main.storyboard */,
-				3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */,
-				3F54E6A628FEC51C00CD9B10 /* LaunchScreen.storyboard */,
-				3F54E6A928FEC51C00CD9B10 /* Info.plist */,
-				3F54E6A128FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld */,
-			);
-			path = "GoodNotes-TDL";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +173,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F54E6A828FEC51C00CD9B10 /* LaunchScreen.storyboard in Resources */,
 				3F54E6A528FEC51C00CD9B10 /* Assets.xcassets in Resources */,
-				3F54E6A028FEC51A00CD9B10 /* Main.storyboard in Resources */,
+				3F08148828FEF58D002979E5 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,33 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F54E69D28FEC51A00CD9B10 /* ViewController.swift in Sources */,
+				3F08148128FEF305002979E5 /* AppCoordinator.swift in Sources */,
 				3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */,
-				3F54E69B28FEC51A00CD9B10 /* SceneDelegate.swift in Sources */,
 				3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */,
+				3F08147728FEF1A8002979E5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		3F54E69E28FEC51A00CD9B10 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F54E69F28FEC51A00CD9B10 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3F54E6A628FEC51C00CD9B10 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F54E6A728FEC51C00CD9B10 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3F54E6AA28FEC51C00CD9B10 /* Debug */ = {
@@ -293,12 +318,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZD26S5Y8Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GoodNotes-TDL/Info.plist";
+				INFOPLIST_FILE = App/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +331,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyit.GoodNotes-TDL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,12 +349,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3ZD26S5Y8Y;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "GoodNotes-TDL/Info.plist";
+				INFOPLIST_FILE = App/Info/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,9 +362,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nyit.GoodNotes-TDL";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
