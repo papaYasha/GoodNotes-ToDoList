@@ -13,20 +13,13 @@ class AppCoordinator {
     }
 
     func start() {
-        print("show screen")
-//        showAddTask()
-//        showNoteListView()
-//        if Constants.isAuth {
-//            showRegistrationFlow()
-//        } else {
-//            showOnboardingFlow()
-//        }
+        showOnboardingFlow()
     }
 //
-//    private func showOnboardingFlow() {
-//        let onboardingFlowCoordinator = OnboardingFlowCoordinator(navigationController: navigationController)
-//        onboardingFlowCoordinator.start()
-//    }
+    private func showOnboardingFlow() {
+        let onboardingFlowCoordinator = OnboardingFlowCoordinator(navigationController: navigationController)
+        onboardingFlowCoordinator.start()
+    }
 //
 //    private func showRegistrationFlow() {
 //        let registrationFlowCoordinator = RegistrationFlowCoordinator(navigationController: navigationController)
