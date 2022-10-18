@@ -17,10 +17,10 @@ struct Onboarding: View {
                         VStack(alignment: .center, spacing: 12) {
                             Text(screen.title)
                                 .font(Font.custom("Roboto-ThinItalic", size: 24))
-                                .foregroundColor(.black)
+                                .foregroundColor(Color(Constants.onboardingTextColor))
                             Text(screen.message)
                                 .font(Font.custom("Roboto-Bold", size: 18))
-                                .foregroundColor(.black)
+                                .foregroundColor(Color(Constants.onboardingTextColor))
                             }
                         .frame(maxWidth: .infinity, alignment: .center)
                         Spacer()
@@ -42,7 +42,7 @@ struct Onboarding: View {
                 Image(getImageName()).resizable()
                     .frame(maxWidth: .infinity, maxHeight: getScreenBounds().height / 2.8)
                     .animation(.easeInOut, value: getIndex())
-            }
+            }.background(Color(Constants.onboardingBackgroundColor))
         )
         .ignoresSafeArea(.container, edges: .all)
         .overlay(
@@ -50,6 +50,7 @@ struct Onboarding: View {
                 HStack(spacing: 8) {
                     ForEach(boardingScreens.indices,id: \.self) { index in
                         Circle()
+                            .foregroundColor(Color(Constants.onboardingTextColor))
                             .frame(width: 8, height: 8)
                             .opacity(index == getIndex() ? 1 : 0.4)
                             .animation(.easeInOut, value: getIndex())
@@ -62,10 +63,10 @@ struct Onboarding: View {
                     }, label: {
                         Text("Get Started")
                             .font(Font.custom("Roboto-ThinItalic", size: 18))
-                            .foregroundColor(.black)
+                            .foregroundColor(Color(Constants.onboardingTextColor))
                             .padding(.vertical, 20)
                             .frame(maxWidth: .infinity)
-                            .background(Color.white)
+                            .background(Color(Constants.onboardingBackgroundColor))
                             .cornerRadius(5)
 
                     })

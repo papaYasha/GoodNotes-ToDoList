@@ -21,6 +21,8 @@ struct Constants {
     static let tabBarColor = "tabBarColor"
     static let customRectangleLightGrayColor = "assigneeRectangle"
     static let customLightBlueColor = "customLightBlue"
+    static let onboardingBackgroundColor = "onboardingBackground"
+    static let onboardingTextColor = "onboardingText"
     
     // MARK: - Fonts
 
