@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,27 +18,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="d6i-yO-F3F">
-                                <rect key="frame" x="127" y="338" width="160" height="220"/>
+                                <rect key="frame" x="125.5" y="337.5" width="163.5" height="221.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-nF-R22">
-                                        <rect key="frame" x="5.5" y="0.0" width="149" height="149"/>
+                                        <rect key="frame" x="7" y="0.0" width="149" height="149"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="149" id="JG6-3A-Ida"/>
                                             <constraint firstAttribute="width" constant="149" id="fzC-ib-QUb"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="todo" translatesAutoresizingMaskIntoConstraints="NO" id="ITG-6u-kkB">
-                                        <rect key="frame" x="0.0" y="164" width="160" height="56"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="56" id="84q-Ok-XaY"/>
-                                            <constraint firstAttribute="width" constant="160" id="znW-tV-Rvn"/>
-                                        </constraints>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="todo list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew4-hK-uE7">
+                                        <rect key="frame" x="0.0" y="164" width="163.5" height="57.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="d6i-yO-F3F" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IAj-e3-mRo"/>
                             <constraint firstItem="d6i-yO-F3F" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Yg0-M9-ZTb"/>
@@ -51,6 +51,8 @@
     </scenes>
     <resources>
         <image name="logo" width="149" height="149"/>
-        <image name="todo" width="158" height="37"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

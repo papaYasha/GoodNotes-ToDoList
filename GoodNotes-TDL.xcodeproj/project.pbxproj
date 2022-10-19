@@ -34,7 +34,8 @@
 		3F0814DF28FF0751002979E5 /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0814DE28FF0751002979E5 /* EmptyModel.swift */; };
 		3F0814E128FF075A002979E5 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0814E028FF075A002979E5 /* ErrorModel.swift */; };
 		3F0814E828FF0972002979E5 /* AuthTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0814E728FF0972002979E5 /* AuthTokenModel.swift */; };
-		3F1D5DA12900096A00F407F5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DA02900096A00F407F5 /* R.generated.swift */; };
+		3F1D5DA4290011CF00F407F5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DA3290011CF00F407F5 /* R.generated.swift */; };
+		3F1D5DA629001D3E00F407F5 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DA529001D3E00F407F5 /* OnboardingViewModel.swift */; };
 		3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */; };
 		3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E6A128FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld */; };
 		3F54E6A528FEC51C00CD9B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */; };
@@ -70,7 +71,8 @@
 		3F0814DE28FF0751002979E5 /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
 		3F0814E028FF075A002979E5 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		3F0814E728FF0972002979E5 /* AuthTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenModel.swift; sourceTree = "<group>"; };
-		3F1D5DA02900096A00F407F5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		3F1D5DA3290011CF00F407F5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		3F1D5DA529001D3E00F407F5 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		3F54E69528FEC51A00CD9B10 /* GoodNotes-TDL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodNotes-TDL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F54E6A228FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoodNotes_TDL.xcdatamodel; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		3F08148A28FEFC23002979E5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3F1D5DA529001D3E00F407F5 /* OnboardingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -517,7 +520,7 @@
 		3F1D5DA229000A8800F407F5 /* RSwift */ = {
 			isa = PBXGroup;
 			children = (
-				3F1D5DA02900096A00F407F5 /* R.generated.swift */,
+				3F1D5DA3290011CF00F407F5 /* R.generated.swift */,
 			);
 			path = RSwift;
 			sourceTree = "<group>";
@@ -696,7 +699,7 @@
 				3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */,
 				3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */,
 				3F0814E128FF075A002979E5 /* ErrorModel.swift in Sources */,
-				3F1D5DA12900096A00F407F5 /* R.generated.swift in Sources */,
+				3F1D5DA4290011CF00F407F5 /* R.generated.swift in Sources */,
 				3F0814CB28FF0405002979E5 /* SignUpRequestModel.swift in Sources */,
 				3F0814D128FF0489002979E5 /* SignUpViewModel.swift in Sources */,
 				3F0814DD28FF073C002979E5 /* RestTemplate.swift in Sources */,
@@ -707,6 +710,7 @@
 				3F08149628FEFD71002979E5 /* Onboarding.swift in Sources */,
 				3F08149928FEFDB2002979E5 /* OnboardingFlowCoordinator.swift in Sources */,
 				3F08149128FEFCD8002979E5 /* Constants.swift in Sources */,
+				3F1D5DA629001D3E00F407F5 /* OnboardingViewModel.swift in Sources */,
 				3F0814CF28FF044E002979E5 /* SignUp.swift in Sources */,
 				3F0814C928FF03CE002979E5 /* RegistrationFlowCoordinator.swift in Sources */,
 			);

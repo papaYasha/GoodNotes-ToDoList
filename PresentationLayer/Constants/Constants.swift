@@ -4,11 +4,6 @@ struct Constants {
 
     static let isAuth = true
     
-    // MARK: - General
-    
-    static let signInButtonText = "Sign In"
-    static let signUpButtonText = "Sign Up"
-
     // MARK: - Colors
 
     static let circleAvatarColor = "circleAvatar"
@@ -37,28 +32,18 @@ struct Constants {
 
     // MARK: - Onboardig
 
-    // General
-
-    static let textForButton = "Get started"
-
     // Walkthrough 1
 
-    static let firstScreenTitle = "Welcome to todo list"
-    static let firstScreenMessage = "Whats going to happen tomorrow?"
     static let firstScreenContentImageName = "contentImage1"
     static let firstScreenBackgroundImageName = "background1"
 
     // Walkthrough 2
 
-    static let secondScreenTitle = "Work happens"
-    static let secondScreenMessage = "Get notified when work happens."
     static let secondScreenContentImageName = "contentImage2"
     static let secondScreenBackgroundImageName = "background2"
 
     // Walkthrough 3
 
-    static let thirdScreenTitle = "Tasks and assign"
-    static let thirdScreenMessage = "Task and assign them to colleagues."
     static let thirdScreenContentImageName = "contentImage3"
     static let thirdScreenBackgroundImageName = "background3"
 

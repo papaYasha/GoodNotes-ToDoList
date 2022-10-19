@@ -2,6 +2,8 @@ import SwiftUI
 
 struct Onboarding: View {
     
+    @StateObject var viewModel: OnboardingViewModel
+    
     @State var offset: CGFloat = 0
 
     var body: some View {
@@ -17,10 +19,10 @@ struct Onboarding: View {
                             .frame(width: getScreenBounds().width - 100, height: getScreenBounds().width - 80)
                         VStack(alignment: .center, spacing: 12) {
                             Text(screen.title)
-                                .font(Font.custom("Roboto-ThinItalic", size: 24))
+                                .font(Font.custom(Constants.robotoThinItalic, size: 24))
                                 .foregroundColor(Color(Constants.onboardingTextColor))
                             Text(screen.message)
-                                .font(Font.custom("Roboto-Bold", size: 18))
+                                .font(Font.custom(Constants.robotoBold, size: 18))
                                 .foregroundColor(Color(Constants.onboardingTextColor))
                             }
                         .frame(maxWidth: .infinity, alignment: .center)
@@ -62,8 +64,8 @@ struct Onboarding: View {
                     Button(action: {
                         print("action")
                     }, label: {
-                        Text("Get Started")
-                            .font(Font.custom("Roboto-ThinItalic", size: 18))
+                        Text(LocalizationConstants.getStartedButtonText)
+                            .font(Font.custom(Constants.robotoThinItalic, size: 18))
                             .foregroundColor(Color(Constants.onboardingTextColor))
                             .padding(.vertical, 20)
                             .frame(maxWidth: .infinity)
@@ -94,7 +96,7 @@ struct Onboarding: View {
 
 struct OnBoarding_Previews: PreviewProvider {
     static var previews: some View {
-       Onboarding()
+       Onboarding(viewModel: OnboardingViewModel(), offset: 0)
     }
 }
 

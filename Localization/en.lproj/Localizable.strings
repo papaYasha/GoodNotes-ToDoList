@@ -1,2 +1,28 @@
+// MARK: - General
 
-"jopa" = "jopa";
+"sign_in_button_text" = "Sign In";
+"sign_up_button_text" = "Sign Up";
+
+// MARK: - ONBOARDING
+
+// General
+
+"get_started_button_text" = "Get started";
+
+// Walktrough 1
+
+"first_screen_title" = "Welcome to todo list";
+"first_screen_message" = "Whats going to happen tomorrow?";
+
+// Walktrough 2
+
+"second_screen_title" = "Work happens";
+"second_screen_message" = "Get notified when work happens.";
+
+// Wakthrough 3
+
+"third_screen_title" = "Tasks and assign";
+"third_screen_message" = "Task and assign them to colleagues.";
+
+
+
