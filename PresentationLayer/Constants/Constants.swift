@@ -50,12 +50,7 @@ struct Constants {
     // MARK: - Sign Up
 
     static let profilePhoto = "circleAvatar"
-    static let welcomeSignUpTextTitle = "Welcome"
-    static let welcomeSignUpTextMessage = "Sign up to continue"
-    static let usernameText = "Username"
-    static let emailAddressPlaceholder = "Username (email address)"
-    static let passwordText = "Password"
-    static let enterYourPasswordPlaceholder = "Enter your password"
+
 
     // MARK: - Sign In
 

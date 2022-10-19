@@ -24,5 +24,14 @@
 "third_screen_title" = "Tasks and assign";
 "third_screen_message" = "Task and assign them to colleagues.";
 
+// MARK: - SIGN UP
+
+"welcome_text" = "Welcome";
+"sign_up_to_continue_text" = "Sign up to continue";
+"username_text" = "Username";
+"username_placeholder_text" = "Username(email address)";
+"password_text" = "Password";
+"password_placeholder_text" = "Enter your password";
+
 
 

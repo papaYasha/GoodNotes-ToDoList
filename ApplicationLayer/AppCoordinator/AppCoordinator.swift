@@ -1,10 +1,13 @@
 import UIKit
 import SwiftUI
+import Combine
 
 class AppCoordinator {
 
     let window: UIWindow
     let navigationController = UINavigationController()
+    
+    var cancellable = Set<AnyCancellable>()
 
     init(window: UIWindow) {
         self.window = window
@@ -15,35 +18,21 @@ class AppCoordinator {
     func start() {
         showOnboardingFlow()
     }
-//
+
     private func showOnboardingFlow() {
         let onboardingFlowCoordinator = OnboardingFlowCoordinator(navigationController: navigationController)
         onboardingFlowCoordinator.start()
+        onboardingFlowCoordinator.flowEndSubject
+            .sink { [weak self] in
+                self?.showRegistrationFlow()
+            }
+            .store(in: &cancellable)
+        
     }
-//
-//    private func showRegistrationFlow() {
-//        let registrationFlowCoordinator = RegistrationFlowCoordinator(navigationController: navigationController)
-//        registrationFlowCoordinator.start()
-//        registrationFlowCoordinator.flowEnd = {
-//            self.showWorkListFlow()
-//        }
-//    }
-//
-//    private func showWorkListFlow() {
-//        navigationController.popToRootViewController(animated: false)
-//        let workListFlowCoordinator = WorkListFlowCoordinator(root: navigationController)
-//        navigationController.isNavigationBarHidden = true
-//        navigationController.interactivePopGestureRecognizer?.isEnabled = false
-//        workListFlowCoordinator.start()
-//    }
-//
-//    private func showMainPage() {
-//        let view = UIHostingController(rootView: MainPage())
-//        navigationController.pushViewController(view, animated: true)
-//    }
-//
-//    private func showAddTask() {
-//        let view = UIHostingController(rootView: AddTask())
-//        navigationController.pushViewController(view, animated: true)
-//    }
+    
+    private func showRegistrationFlow() {
+        navigationController.popToRootViewController(animated: false)
+        let registrationFlowCoordinator = RegistrationFlowCoordinator(navigationController: navigationController)
+        registrationFlowCoordinator.start()
+    }
 }

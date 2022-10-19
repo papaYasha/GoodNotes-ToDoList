@@ -27,5 +27,15 @@ struct LocalizationConstants {
     
     static let thirdScreenTitle = R.string.localizable.third_screen_title()
     static let thirdScreenMessage = R.string.localizable.third_screen_message()
+    
+    // MARK: - SIGN UP
+    
+    static let signUpWelcomeTextTitle = R.string.localizable.welcome_text()
+    static let signUpWelcomeTextMessage = R.string.localizable.sign_up_to_continue_text()
+    
+    static let usernameText = R.string.localizable.username_text()
+    static let emailAddressPlaceholder = R.string.localizable.username_placeholder_text()
+    static let passwordText = R.string.localizable.password_text()
+    static let enterYourPasswordPlaceholder = R.string.localizable.password_placeholder_text()
 
 }

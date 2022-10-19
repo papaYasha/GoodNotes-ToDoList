@@ -19,10 +19,11 @@ struct Onboarding: View {
                             .frame(width: getScreenBounds().width - 100, height: getScreenBounds().width - 80)
                         VStack(alignment: .center, spacing: 12) {
                             Text(screen.title)
-                                .font(Font.custom(Constants.robotoThinItalic, size: 24))
+                                .font(Font.custom(Constants.robotoThinItalic, size: 26))
                                 .foregroundColor(Color(Constants.onboardingTextColor))
                             Text(screen.message)
-                                .font(Font.custom(Constants.robotoBold, size: 18))
+                                .font(Font.custom(Constants.robotoRegular, size: 18))
+                                .fontWeight(.semibold)
                                 .foregroundColor(Color(Constants.onboardingTextColor))
                             }
                         .frame(maxWidth: .infinity, alignment: .center)
@@ -62,10 +63,10 @@ struct Onboarding: View {
                 .frame(maxHeight: getScreenBounds().height / 2.5)
                 HStack {
                     Button(action: {
-                        print("action")
+                        viewModel.didTapGetStartedButton()
                     }, label: {
                         Text(LocalizationConstants.getStartedButtonText)
-                            .font(Font.custom(Constants.robotoThinItalic, size: 18))
+                            .font(Font.custom(Constants.robotoThinItalic, size: 22))
                             .foregroundColor(Color(Constants.onboardingTextColor))
                             .padding(.vertical, 20)
                             .frame(maxWidth: .infinity)
