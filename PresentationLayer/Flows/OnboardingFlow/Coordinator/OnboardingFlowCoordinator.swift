@@ -1,7 +1,10 @@
 import UIKit
 import SwiftUI
+import Combine
 
 class OnboardingFlowCoordinator {
+    
+    var flowEndSubject = PassthroughSubject<Void, Never>()
 
     var navigationController: UINavigationController?
 
@@ -10,7 +13,9 @@ class OnboardingFlowCoordinator {
     }
 
     func start() {
-        let view = UIHostingController(rootView: Onboarding())
+        let viewModel = OnboardingViewModel()
+        let view = UIHostingController(rootView: Onboarding(viewModel: viewModel))
         navigationController?.pushViewController(view, animated: false)
+        viewModel.onTapSubject.send()
     }
 }

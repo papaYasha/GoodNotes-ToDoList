@@ -10,7 +10,15 @@ struct BoardingScreen: Identifiable {
 // Sample model screen
 
 var boardingScreens: [BoardingScreen] = [
-    BoardingScreen(contentImage: Constants.firstScreenContentImageName, title: Constants.firstScreenTitle, message: Constants.firstScreenMessage),
-    BoardingScreen(contentImage: Constants.secondScreenContentImageName, title: Constants.secondScreenTitle, message: Constants.secondScreenMessage),
-    BoardingScreen(contentImage: Constants.thirdScreenContentImageName, title: Constants.thirdScreenTitle, message: Constants.thirdScreenMessage)
+    BoardingScreen(contentImage: Constants.firstScreenContentImageName,
+                   title: LocalizationConstants.firstScreenTitle,
+                   message: LocalizationConstants.firstScreenMessage),
+    
+    BoardingScreen(contentImage: Constants.secondScreenContentImageName,
+                   title: LocalizationConstants.secondScreenTitle,
+                   message: LocalizationConstants.secondScreenMessage),
+    
+    BoardingScreen(contentImage: Constants.thirdScreenContentImageName,
+                   title: LocalizationConstants.thirdScreenTitle,
+                   message: LocalizationConstants.thirdScreenMessage)
 ]

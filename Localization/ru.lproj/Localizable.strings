@@ -1,7 +1,25 @@
-/* 
-  Localizable.strings
-  GoodNotes-TDL
+// MARK: - General
 
-  Created by student on 19.10.22.
-  
-*/
+"sign_in_button_text" = "Войти";
+"sign_up_button_text" = "Создать";
+
+// MARK: - ONBOARDING
+
+// General
+
+"get_started_button_text" = "Начать";
+
+// Walktrough 1
+
+"first_screen_title" = "Добро пожаловать в ToDo List";
+"first_screen_message" = "Какие планы на сегодня?";
+
+// Walktrough 2
+
+"second_screen_title" = "Работа кипит";
+"second_screen_message" = "Получайте уведомления о важных делах";
+
+// Wakthrough 3
+
+"third_screen_title" = "Назначайте задачи";
+"third_screen_message" = "Ставьте и назначайте задачи коллегам";
