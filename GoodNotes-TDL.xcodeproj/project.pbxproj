@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0B3FDF12CE7DF3BC440B60 /* libPods-GoodNotes-TDL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3438BC9251526674B0B9EDD /* libPods-GoodNotes-TDL.a */; };
 		3F08147728FEF1A8002979E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08147528FEF1A8002979E5 /* SceneDelegate.swift */; };
 		3F08148128FEF305002979E5 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08148028FEF305002979E5 /* AppCoordinator.swift */; };
 		3F08148828FEF58D002979E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F08148728FEF58D002979E5 /* LaunchScreen.storyboard */; };
@@ -33,12 +34,16 @@
 		3F0814DF28FF0751002979E5 /* EmptyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0814DE28FF0751002979E5 /* EmptyModel.swift */; };
 		3F0814E128FF075A002979E5 /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0814E028FF075A002979E5 /* ErrorModel.swift */; };
 		3F0814E828FF0972002979E5 /* AuthTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0814E728FF0972002979E5 /* AuthTokenModel.swift */; };
+		3F1D5DA12900096A00F407F5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DA02900096A00F407F5 /* R.generated.swift */; };
 		3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */; };
 		3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E6A128FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld */; };
 		3F54E6A528FEC51C00CD9B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */; };
+		3F65A7482900053F005A5D56 /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7472900053F005A5D56 /* LocalizationConstants.swift */; };
+		3F65A74B290005CD005A5D56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F65A74D290005CD005A5D56 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C04253E64489D489023A398 /* Pods-GoodNotes-TDL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNotes-TDL.debug.xcconfig"; path = "Target Support Files/Pods-GoodNotes-TDL/Pods-GoodNotes-TDL.debug.xcconfig"; sourceTree = "<group>"; };
 		3F08147528FEF1A8002979E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3F08148028FEF305002979E5 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3F08148728FEF58D002979E5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,11 +70,17 @@
 		3F0814DE28FF0751002979E5 /* EmptyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyModel.swift; sourceTree = "<group>"; };
 		3F0814E028FF075A002979E5 /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		3F0814E728FF0972002979E5 /* AuthTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenModel.swift; sourceTree = "<group>"; };
+		3F1D5DA02900096A00F407F5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		3F54E69528FEC51A00CD9B10 /* GoodNotes-TDL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodNotes-TDL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F54E6A228FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoodNotes_TDL.xcdatamodel; sourceTree = "<group>"; };
 		3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F54E6A928FEC51C00CD9B10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F65A7472900053F005A5D56 /* LocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
+		3F65A74C290005CD005A5D56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3F65A74E290005FF005A5D56 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C43D7D8D4FF80B5F429F4F55 /* Pods-GoodNotes-TDL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNotes-TDL.release.xcconfig"; path = "Target Support Files/Pods-GoodNotes-TDL/Pods-GoodNotes-TDL.release.xcconfig"; sourceTree = "<group>"; };
+		D3438BC9251526674B0B9EDD /* libPods-GoodNotes-TDL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodNotes-TDL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0B3FDF12CE7DF3BC440B60 /* libPods-GoodNotes-TDL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				3F08149028FEFCD8002979E5 /* Constants.swift */,
+				3F65A7472900053F005A5D56 /* LocalizationConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -455,6 +468,7 @@
 		3F0814D728FF06A5002979E5 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
+				3F65A74D290005CD005A5D56 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -500,15 +514,26 @@
 			path = DataAccessLayer;
 			sourceTree = "<group>";
 		};
+		3F1D5DA229000A8800F407F5 /* RSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3F1D5DA02900096A00F407F5 /* R.generated.swift */,
+			);
+			path = RSwift;
+			sourceTree = "<group>";
+		};
 		3F54E68C28FEC51A00CD9B10 = {
 			isa = PBXGroup;
 			children = (
-				3F0814E928FF3161002979E5 /* DataAccessLayer */,
 				3F0814D528FF0582002979E5 /* ApplicationLayer */,
 				3F0814D228FF052D002979E5 /* BusinessLogicLayer */,
+				3F0814E928FF3161002979E5 /* DataAccessLayer */,
 				3F0814D628FF0598002979E5 /* PresentationLayer */,
 				3F0814D728FF06A5002979E5 /* Localization */,
+				3F1D5DA229000A8800F407F5 /* RSwift */,
 				3F54E69628FEC51A00CD9B10 /* Products */,
+				68F44D5CD884E00F4B5E87BE /* Pods */,
+				ADD3C68BF8F99F30B06D9F91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -520,6 +545,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		68F44D5CD884E00F4B5E87BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C04253E64489D489023A398 /* Pods-GoodNotes-TDL.debug.xcconfig */,
+				C43D7D8D4FF80B5F429F4F55 /* Pods-GoodNotes-TDL.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ADD3C68BF8F99F30B06D9F91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3438BC9251526674B0B9EDD /* libPods-GoodNotes-TDL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -527,6 +569,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3F54E6AC28FEC51C00CD9B10 /* Build configuration list for PBXNativeTarget "GoodNotes-TDL" */;
 			buildPhases = (
+				16CC567E9DB80EB2F4C82A8F /* [CP] Check Pods Manifest.lock */,
+				3F1D5D9D2900083A00F407F5 /* ShellScript */,
 				3F54E69128FEC51A00CD9B10 /* Sources */,
 				3F54E69228FEC51A00CD9B10 /* Frameworks */,
 				3F54E69328FEC51A00CD9B10 /* Resources */,
@@ -562,6 +606,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 3F54E68C28FEC51A00CD9B10;
 			productRefGroup = 3F54E69628FEC51A00CD9B10 /* Products */;
@@ -580,6 +625,7 @@
 			files = (
 				3F0814A628FEFEDC002979E5 /* Roboto-ThinItalic.ttf in Resources */,
 				3F54E6A528FEC51C00CD9B10 /* Assets.xcassets in Resources */,
+				3F65A74B290005CD005A5D56 /* Localizable.strings in Resources */,
 				3F08148828FEF58D002979E5 /* LaunchScreen.storyboard in Resources */,
 				3F0814A528FEFEDC002979E5 /* Roboto-Regular.ttf in Resources */,
 				3F0814A428FEFEDC002979E5 /* Roboto-Light.ttf in Resources */,
@@ -592,6 +638,50 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16CC567E9DB80EB2F4C82A8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodNotes-TDL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F1D5D9D2900083A00F407F5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F54E69128FEC51A00CD9B10 /* Sources */ = {
@@ -606,10 +696,12 @@
 				3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */,
 				3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */,
 				3F0814E128FF075A002979E5 /* ErrorModel.swift in Sources */,
+				3F1D5DA12900096A00F407F5 /* R.generated.swift in Sources */,
 				3F0814CB28FF0405002979E5 /* SignUpRequestModel.swift in Sources */,
 				3F0814D128FF0489002979E5 /* SignUpViewModel.swift in Sources */,
 				3F0814DD28FF073C002979E5 /* RestTemplate.swift in Sources */,
 				3F0814DA28FF06FB002979E5 /* ValidationUtil.swift in Sources */,
+				3F65A7482900053F005A5D56 /* LocalizationConstants.swift in Sources */,
 				3F0814CD28FF0413002979E5 /* SignUpResponseModel.swift in Sources */,
 				3F08147728FEF1A8002979E5 /* SceneDelegate.swift in Sources */,
 				3F08149628FEFD71002979E5 /* Onboarding.swift in Sources */,
@@ -622,11 +714,24 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		3F65A74D290005CD005A5D56 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F65A74C290005CD005A5D56 /* en */,
+				3F65A74E290005FF005A5D56 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		3F54E6AA28FEC51C00CD9B10 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -687,6 +792,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -739,6 +845,7 @@
 		};
 		3F54E6AD28FEC51C00CD9B10 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C04253E64489D489023A398 /* Pods-GoodNotes-TDL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -770,6 +877,7 @@
 		};
 		3F54E6AE28FEC51C00CD9B10 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C43D7D8D4FF80B5F429F4F55 /* Pods-GoodNotes-TDL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

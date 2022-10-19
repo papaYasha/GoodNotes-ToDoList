@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct Onboarding: View {
+    
     @State var offset: CGFloat = 0
 
     var body: some View {
