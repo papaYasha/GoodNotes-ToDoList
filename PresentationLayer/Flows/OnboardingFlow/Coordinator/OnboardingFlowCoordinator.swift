@@ -5,6 +5,7 @@ import Combine
 class OnboardingFlowCoordinator {
     
     var flowEndSubject = PassthroughSubject<Void, Never>()
+    var cancellables = Set<AnyCancellable>()
 
     var navigationController: UINavigationController?
 
@@ -16,6 +17,9 @@ class OnboardingFlowCoordinator {
         let viewModel = OnboardingViewModel()
         let view = UIHostingController(rootView: Onboarding(viewModel: viewModel))
         navigationController?.pushViewController(view, animated: false)
-        viewModel.onTapSubject.send()
+
+        viewModel.onTapSubject
+            .sink { self.flowEndSubject.send() }
+            .store(in: &cancellables)
     }
 }

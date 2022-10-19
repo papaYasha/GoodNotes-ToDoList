@@ -16,10 +16,19 @@
 
 // Walktrough 2
 
-"second_screen_title" = "Работа кипит";
+"second_screen_title" = "Организуйте свою жизнь";
 "second_screen_message" = "Получайте уведомления о важных делах";
 
 // Wakthrough 3
 
-"third_screen_title" = "Назначайте задачи";
-"third_screen_message" = "Ставьте и назначайте задачи коллегам";
+"third_screen_title" = "Достигайте большего вместе";
+"third_screen_message" = "Создавайте и назначайте задачи коллегам";
+
+// MARK: - SIGN UP
+
+"welcome_text" = "Привет";
+"sign_up_to_continue_text" = "Создайте аккаунт для продолжения";
+"username_text" = "Имя";
+"username_placeholder_text" = "Введите ваше имя или адресс эл.почты";
+"password_text" = "Пароль";
+"password_placeholder_text" = "Введите ваш пароль";
