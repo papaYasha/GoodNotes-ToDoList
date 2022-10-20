@@ -33,5 +33,34 @@
 "password_text" = "Password";
 "password_placeholder_text" = "Enter your password";
 
+// MARK: - SIGN IN
+
+"welcome_back_text" = "Welcome back";
+"sign_in_to_continue" = "sign in to continue";
+"forgot_password_text" = "Forgot password";
+
+// MARK: - FORGOT PASSWORD
+
+"send_request_button_text" = "Send Request";
+"forgot_password_text_title" = "Forgot Password";
+"forgot_password_text_message" = "Please enter your email below to recevie your password reset instructions";
+
+// MARK: - RESET PASSWORD
+
+"reset_password_title" = "Reset Password";
+"reset_password_message" = "Reset code was sent to your email. Please enter the code and create new password";
+"reset_code_text" = "Reset code";
+"enter_your_code_placeholder" = "Enter your code";
+"new_password_text" = "New password";
+"new_password_placeholder" = "Enter new password";
+"confirm_password_text" = "Confirm password";
+"confirm_password_placeholder" = "Enter your confirm password";
+"change_password_button_text" = "Change password";
+
+// MARK: - SUCCESSFUL RESET
+
+"successful_reset_title" = "Succesful!";
+"successful_reset_message" = "You have succesfully change password. Please use your new passwords when logging in.";
+
 
 

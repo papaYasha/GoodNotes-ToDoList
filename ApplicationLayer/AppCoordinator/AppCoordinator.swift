@@ -16,7 +16,7 @@ class AppCoordinator {
     }
 
     func start() {
-        showOnboardingFlow()
+        showRegistrationFlow()
     }
 
     private func showOnboardingFlow() {
@@ -33,6 +33,6 @@ class AppCoordinator {
     private func showRegistrationFlow() {
         navigationController.popToRootViewController(animated: false)
         let registrationFlowCoordinator = RegistrationFlowCoordinator(navigationController: navigationController)
-        registrationFlowCoordinator.start()
+        registrationFlowCoordinator.showSignIn()
     }
 }

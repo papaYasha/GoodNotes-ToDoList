@@ -32,3 +32,33 @@
 "username_placeholder_text" = "Введите ваше имя или адресс эл.почты";
 "password_text" = "Пароль";
 "password_placeholder_text" = "Введите ваш пароль";
+
+// MARK: - SIGN IN
+
+"welcome_back_text" = "C возвращением!";
+"sign_in_to_continue" = "войдите для продолжения";
+"forgot_password_text" = "Забыли пароль";
+"forgot_password_text_title" = "Забыли Пароль";
+
+// MARK: - FORGOT PASSWORD
+
+"send_request_button_text" = "Отправить";
+"forgot_password_text_title" = "Забыли свой пароль?";
+"forgot_password_text_message" = "Пожалуйста, укажите ваш e-mail для отправки вам инструкции для восстановления";
+
+// MARK: - RESET PASSWORD
+
+"reset_password_title" = "Восстановить пароль";
+"reset_password_message" = "Код доступа отправлен на вашу почту. Пожалуйста, введите его и придумайте новый пароль.";
+"reset_code_text" = "Код";
+"enter_your_code_placeholder" = "Введите ваш код";
+"new_password_text" = "Новый пароль";
+"new_password_placeholder" = "Введите новый пароль";
+"confirm_password_text" = "Подтвердите пароль";
+"confirm_password_placeholder" = "Введите пароль для подтверждения";
+"change_password_button_text" = "Изменить";
+
+// MARK: - SUCCESSFUL RESET
+
+"successful_reset_title" = "Успешно!";
+"successful_reset_message" = "Вы успешно изменили пароль. Пожалуйста, используйте его для входа.";

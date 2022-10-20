@@ -38,11 +38,17 @@
 		3F1D5DA629001D3E00F407F5 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DA529001D3E00F407F5 /* OnboardingViewModel.swift */; };
 		3F1D5DA9290029AC00F407F5 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DA8290029AC00F407F5 /* CustomDivider.swift */; };
 		3F1D5DAD29002AEF00F407F5 /* WelcomeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DAC29002AEF00F407F5 /* WelcomeText.swift */; };
+		3F4B362E29016E820012AF6E /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B362D29016E820012AF6E /* LeftArrow.swift */; };
+		3F4B363029017ADA0012AF6E /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B362F29017ADA0012AF6E /* SignIn.swift */; };
+		3F4B363229017AF70012AF6E /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B363129017AF70012AF6E /* SignInViewModel.swift */; };
+		3F4EFFA929018854001F6C51 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4EFFA829018854001F6C51 /* ForgotPassword.swift */; };
+		3F4EFFAB290195EF001F6C51 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4EFFAA290195EF001F6C51 /* ResetPassword.swift */; };
 		3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */; };
 		3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E6A128FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld */; };
 		3F54E6A528FEC51C00CD9B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */; };
 		3F65A7482900053F005A5D56 /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7472900053F005A5D56 /* LocalizationConstants.swift */; };
 		3F65A74B290005CD005A5D56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F65A74D290005CD005A5D56 /* Localizable.strings */; };
+		3FB8253D2901A29700DEB13C /* SuccessfulReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8253C2901A29700DEB13C /* SuccessfulReset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +83,11 @@
 		3F1D5DA529001D3E00F407F5 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		3F1D5DA8290029AC00F407F5 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		3F1D5DAC29002AEF00F407F5 /* WelcomeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeText.swift; sourceTree = "<group>"; };
+		3F4B362D29016E820012AF6E /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
+		3F4B362F29017ADA0012AF6E /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		3F4B363129017AF70012AF6E /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		3F4EFFA829018854001F6C51 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		3F4EFFAA290195EF001F6C51 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		3F54E69528FEC51A00CD9B10 /* GoodNotes-TDL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodNotes-TDL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F54E6A228FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoodNotes_TDL.xcdatamodel; sourceTree = "<group>"; };
@@ -85,6 +96,7 @@
 		3F65A7472900053F005A5D56 /* LocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
 		3F65A74C290005CD005A5D56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F65A74E290005FF005A5D56 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3FB8253C2901A29700DEB13C /* SuccessfulReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulReset.swift; sourceTree = "<group>"; };
 		C43D7D8D4FF80B5F429F4F55 /* Pods-GoodNotes-TDL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNotes-TDL.release.xcconfig"; path = "Target Support Files/Pods-GoodNotes-TDL/Pods-GoodNotes-TDL.release.xcconfig"; sourceTree = "<group>"; };
 		D3438BC9251526674B0B9EDD /* libPods-GoodNotes-TDL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodNotes-TDL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -324,6 +336,7 @@
 		3F0814B728FF0224002979E5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3F4B363129017AF70012AF6E /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -331,6 +344,7 @@
 		3F0814B828FF0229002979E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F4B362F29017ADA0012AF6E /* SignIn.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -352,6 +366,7 @@
 		3F0814BB28FF023B002979E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F4EFFA829018854001F6C51 /* ForgotPassword.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -373,6 +388,7 @@
 		3F0814BE28FF0247002979E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F4EFFAA290195EF001F6C51 /* ResetPassword.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -394,6 +410,7 @@
 		3F0814C128FF0258002979E5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3FB8253C2901A29700DEB13C /* SuccessfulReset.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -535,6 +552,7 @@
 			children = (
 				3F1D5DA8290029AC00F407F5 /* CustomDivider.swift */,
 				3F1D5DAC29002AEF00F407F5 /* WelcomeText.swift */,
+				3F4B362D29016E820012AF6E /* LeftArrow.swift */,
 			);
 			path = ReuseViews;
 			sourceTree = "<group>";
@@ -706,6 +724,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F08149328FEFD2D002979E5 /* OffsetScrollView.swift in Sources */,
+				3F4B363029017ADA0012AF6E /* SignIn.swift in Sources */,
 				3F08148128FEF305002979E5 /* AppCoordinator.swift in Sources */,
 				3F0814DF28FF0751002979E5 /* EmptyModel.swift in Sources */,
 				3F0814E828FF0972002979E5 /* AuthTokenModel.swift in Sources */,
@@ -715,6 +734,9 @@
 				3F1D5DA9290029AC00F407F5 /* CustomDivider.swift in Sources */,
 				3F0814E128FF075A002979E5 /* ErrorModel.swift in Sources */,
 				3F1D5DA4290011CF00F407F5 /* R.generated.swift in Sources */,
+				3FB8253D2901A29700DEB13C /* SuccessfulReset.swift in Sources */,
+				3F4EFFA929018854001F6C51 /* ForgotPassword.swift in Sources */,
+				3F4B362E29016E820012AF6E /* LeftArrow.swift in Sources */,
 				3F0814CB28FF0405002979E5 /* SignUpRequestModel.swift in Sources */,
 				3F0814D128FF0489002979E5 /* SignUpViewModel.swift in Sources */,
 				3F0814DD28FF073C002979E5 /* RestTemplate.swift in Sources */,
@@ -726,7 +748,9 @@
 				3F08149628FEFD71002979E5 /* Onboarding.swift in Sources */,
 				3F08149928FEFDB2002979E5 /* OnboardingFlowCoordinator.swift in Sources */,
 				3F08149128FEFCD8002979E5 /* Constants.swift in Sources */,
+				3F4B363229017AF70012AF6E /* SignInViewModel.swift in Sources */,
 				3F1D5DA629001D3E00F407F5 /* OnboardingViewModel.swift in Sources */,
+				3F4EFFAB290195EF001F6C51 /* ResetPassword.swift in Sources */,
 				3F0814CF28FF044E002979E5 /* SignUp.swift in Sources */,
 				3F0814C928FF03CE002979E5 /* RegistrationFlowCoordinator.swift in Sources */,
 			);
