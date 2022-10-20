@@ -17,7 +17,7 @@ struct Constants {
     static let customRectangleLightGrayColor = "assigneeRectangle"
     static let customLightBlueColor = "customLightBlue"
     static let onboardingBackgroundColor = "onboardingBackground"
-    static let onboardingTextColor = "onboardingText"
+    static let onboardingText = "onboardingText"
     
     // MARK: - Fonts
 
@@ -50,37 +50,20 @@ struct Constants {
     // MARK: - Sign Up
 
     static let profilePhoto = "circleAvatar"
-
+    static let arrowLeftBackButton = "arrow.left"
 
     // MARK: - Sign In
 
-    static let forgotPasswordText = "Forgot password"
-    static let welcomeSignInTextTitle = "Welcome back"
-    static let welcomeSignInTextMessage = "Sign in to continue"
 
     // MARK: - Forgot password
 
-    static let sendRequestText = "Send Request"
-    static let welcomeTextForgotPasswordTitle = "Forgot password"
-    static let welcomeTextForgotPasswordMessage = "Please enter your email below to receive\nyour password reset instructions"
 
     // MARK: - Reset password
 
-    static let resetPasswordTitle = "Reset password"
-    static let resetPasswordMessage = "Reset code was sent to your email. Please enter the code and create new password"
-    static let resetCodeText = "Reset code"
-    static let enterYouNumberText = "Enter your number"
-    static let newPasswordText = "New password"
-    static let enterYourPasswordText = "New password"
-    static let confirmPasswordText = "Confirm password"
-    static let enterYourConfirmPasswordText = "Enter confirm password"
-    static let changePasswordText = "Change password"
 
     // MARK: - Successful reset
 
     static let successfulResetImage = "confirmed"
-    static let successfulResetTitle = "Successful!"
-    static let successfulResetMessage = "You have succesfully change password. Please use your new passwords when logging in."
     
     // MARK: - TabBar
     

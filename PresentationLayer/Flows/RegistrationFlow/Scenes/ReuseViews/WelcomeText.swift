@@ -6,7 +6,7 @@ struct WelcomeText: View {
     @State var message: String
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 12) {
             Text(title)
                 .font(.custom(Constants.robotoItalic, size: 32))
                 .foregroundColor(Color(Constants.customLightBlackColor))

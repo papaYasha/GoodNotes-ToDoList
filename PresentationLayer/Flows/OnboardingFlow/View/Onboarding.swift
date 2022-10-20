@@ -20,11 +20,11 @@ struct Onboarding: View {
                         VStack(alignment: .center, spacing: 12) {
                             Text(screen.title)
                                 .font(Font.custom(Constants.robotoThinItalic, size: 26))
-                                .foregroundColor(Color(Constants.onboardingTextColor))
+                                .foregroundColor(Color(Constants.onboardingText))
                             Text(screen.message)
                                 .font(Font.custom(Constants.robotoRegular, size: 18))
                                 .fontWeight(.semibold)
-                                .foregroundColor(Color(Constants.onboardingTextColor))
+                                .foregroundColor(Color(Constants.onboardingText))
                             }
                         .frame(maxWidth: .infinity, alignment: .center)
                         Spacer()
@@ -54,7 +54,7 @@ struct Onboarding: View {
                 HStack(spacing: 8) {
                     ForEach(boardingScreens.indices,id: \.self) { index in
                         Circle()
-                            .foregroundColor(Color(Constants.onboardingTextColor))
+                            .foregroundColor(Color(Constants.onboardingText))
                             .frame(width: 8, height: 8)
                             .opacity(index == getIndex() ? 1 : 0.4)
                             .animation(.easeInOut, value: getIndex())
@@ -67,7 +67,7 @@ struct Onboarding: View {
                     }, label: {
                         Text(LocalizationConstants.getStartedButtonText)
                             .font(Font.custom(Constants.robotoThinItalic, size: 22))
-                            .foregroundColor(Color(Constants.onboardingTextColor))
+                            .foregroundColor(Color(Constants.onboardingText))
                             .padding(.vertical, 20)
                             .frame(maxWidth: .infinity)
                             .background(Color(Constants.onboardingBackgroundColor))
