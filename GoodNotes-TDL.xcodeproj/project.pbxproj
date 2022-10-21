@@ -38,6 +38,7 @@
 		3F1D5DA629001D3E00F407F5 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DA529001D3E00F407F5 /* OnboardingViewModel.swift */; };
 		3F1D5DA9290029AC00F407F5 /* CustomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DA8290029AC00F407F5 /* CustomDivider.swift */; };
 		3F1D5DAD29002AEF00F407F5 /* WelcomeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D5DAC29002AEF00F407F5 /* WelcomeText.swift */; };
+		3F1ED0EA2902DEEB009400CD /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1ED0E92902DEEB009400CD /* ForgotPasswordViewModel.swift */; };
 		3F4B362E29016E820012AF6E /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B362D29016E820012AF6E /* LeftArrow.swift */; };
 		3F4B363029017ADA0012AF6E /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B362F29017ADA0012AF6E /* SignIn.swift */; };
 		3F4B363229017AF70012AF6E /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B363129017AF70012AF6E /* SignInViewModel.swift */; };
@@ -83,6 +84,7 @@
 		3F1D5DA529001D3E00F407F5 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		3F1D5DA8290029AC00F407F5 /* CustomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivider.swift; sourceTree = "<group>"; };
 		3F1D5DAC29002AEF00F407F5 /* WelcomeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeText.swift; sourceTree = "<group>"; };
+		3F1ED0E92902DEEB009400CD /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		3F4B362D29016E820012AF6E /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
 		3F4B362F29017ADA0012AF6E /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		3F4B363129017AF70012AF6E /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
@@ -359,6 +361,7 @@
 		3F0814BA28FF0236002979E5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3F1ED0E92902DEEB009400CD /* ForgotPasswordViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -747,6 +750,7 @@
 				3F08147728FEF1A8002979E5 /* SceneDelegate.swift in Sources */,
 				3F08149628FEFD71002979E5 /* Onboarding.swift in Sources */,
 				3F08149928FEFDB2002979E5 /* OnboardingFlowCoordinator.swift in Sources */,
+				3F1ED0EA2902DEEB009400CD /* ForgotPasswordViewModel.swift in Sources */,
 				3F08149128FEFCD8002979E5 /* Constants.swift in Sources */,
 				3F4B363229017AF70012AF6E /* SignInViewModel.swift in Sources */,
 				3F1D5DA629001D3E00F407F5 /* OnboardingViewModel.swift in Sources */,
