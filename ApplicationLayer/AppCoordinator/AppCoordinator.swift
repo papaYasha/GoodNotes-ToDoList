@@ -14,9 +14,13 @@ class AppCoordinator {
         window.makeKeyAndVisible()
         window.rootViewController = navigationController
     }
+    
+    deinit {
+        print(#function)
+    }
 
     func start() {
-        showRegistrationFlow()
+        showOnboardingFlow()
     }
 
     private func showOnboardingFlow() {
@@ -25,14 +29,14 @@ class AppCoordinator {
         onboardingFlowCoordinator.flowEndSubject
             .sink { [weak self] in
                 self?.showRegistrationFlow()
+                print(#function)
             }
             .store(in: &cancellable)
-        
     }
     
     private func showRegistrationFlow() {
         navigationController.popToRootViewController(animated: false)
         let registrationFlowCoordinator = RegistrationFlowCoordinator(navigationController: navigationController)
-        registrationFlowCoordinator.showSignIn()
+        registrationFlowCoordinator.start()
     }
 }

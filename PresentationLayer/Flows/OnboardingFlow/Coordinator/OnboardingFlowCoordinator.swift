@@ -12,14 +12,17 @@ class OnboardingFlowCoordinator {
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-
+    
     func start() {
         let viewModel = OnboardingViewModel()
         let view = UIHostingController(rootView: Onboarding(viewModel: viewModel))
         navigationController?.pushViewController(view, animated: false)
 
         viewModel.onTapSubject
-            .sink { self.flowEndSubject.send() }
+            .sink { [weak self] in
+                self?.flowEndSubject.send()
+                print("sink")
+            }
             .store(in: &cancellables)
     }
 }

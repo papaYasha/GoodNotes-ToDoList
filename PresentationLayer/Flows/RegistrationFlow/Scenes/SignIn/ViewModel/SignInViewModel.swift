@@ -1,8 +1,10 @@
 import Foundation
-
+import Combine
 
 class SignInViewModel: ObservableObject {
     
+    var forgotPasswordTappedSubject = PassthroughSubject<Void, Never>()
+
     @Published var login = ""
     @Published var password = ""
     
@@ -12,5 +14,9 @@ class SignInViewModel: ObservableObject {
     
     func didTapSignUpButton() {
         print(#function)
+    }
+    
+    func didTapForgotPasswordButton() {
+        forgotPasswordTappedSubject.send()
     }
 }
