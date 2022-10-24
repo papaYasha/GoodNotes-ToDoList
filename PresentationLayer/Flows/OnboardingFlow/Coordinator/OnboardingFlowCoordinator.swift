@@ -21,7 +21,6 @@ class OnboardingFlowCoordinator {
         viewModel.onTapSubject
             .sink { [weak self] in
                 self?.flowEndSubject.send()
-                print("sink")
             }
             .store(in: &cancellables)
     }
