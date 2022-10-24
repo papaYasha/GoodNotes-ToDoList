@@ -52,6 +52,13 @@
 		3F9CA7092906783500F1824B /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA7082906783500F1824B /* ResetPasswordViewModel.swift */; };
 		3F9CA70B29067EB300F1824B /* SuccessfulResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA70A29067EB300F1824B /* SuccessfulResetViewModel.swift */; };
 		3F9CA70F29068A6F00F1824B /* WorkFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA70E29068A6F00F1824B /* WorkFlowCoordinator.swift */; };
+		3F9CA7212906917F00F1824B /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA7202906917F00F1824B /* MainPage.swift */; };
+		3F9CA723290691C700F1824B /* WorkListToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA722290691C700F1824B /* WorkListToday.swift */; };
+		3F9CA7252906924900F1824B /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA7242906924900F1824B /* Menu.swift */; };
+		3F9CA7272906925900F1824B /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA7262906925900F1824B /* AddTask.swift */; };
+		3F9CA7292906926600F1824B /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA7282906926600F1824B /* Profile.swift */; };
+		3F9CA72B2906927000F1824B /* QuickNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA72A2906927000F1824B /* QuickNote.swift */; };
+		3F9CA742290694C800F1824B /* AddTaskAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA741290694C800F1824B /* AddTaskAlert.swift */; };
 		3FB8253D2901A29700DEB13C /* SuccessfulReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8253C2901A29700DEB13C /* SuccessfulReset.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +111,13 @@
 		3F9CA7082906783500F1824B /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
 		3F9CA70A29067EB300F1824B /* SuccessfulResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulResetViewModel.swift; sourceTree = "<group>"; };
 		3F9CA70E29068A6F00F1824B /* WorkFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkFlowCoordinator.swift; sourceTree = "<group>"; };
+		3F9CA7202906917F00F1824B /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		3F9CA722290691C700F1824B /* WorkListToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkListToday.swift; sourceTree = "<group>"; };
+		3F9CA7242906924900F1824B /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		3F9CA7262906925900F1824B /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
+		3F9CA7282906926600F1824B /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		3F9CA72A2906927000F1824B /* QuickNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNote.swift; sourceTree = "<group>"; };
+		3F9CA741290694C800F1824B /* AddTaskAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskAlert.swift; sourceTree = "<group>"; };
 		3FB8253C2901A29700DEB13C /* SuccessfulReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulReset.swift; sourceTree = "<group>"; };
 		C43D7D8D4FF80B5F429F4F55 /* Pods-GoodNotes-TDL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNotes-TDL.release.xcconfig"; path = "Target Support Files/Pods-GoodNotes-TDL/Pods-GoodNotes-TDL.release.xcconfig"; sourceTree = "<group>"; };
 		D3438BC9251526674B0B9EDD /* libPods-GoodNotes-TDL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodNotes-TDL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -613,6 +627,9 @@
 		3F9CA71029068BC100F1824B /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				3F9CA72D2906935E00F1824B /* Model */,
+				3F9CA72E2906936700F1824B /* View */,
+				3F9CA72C2906935900F1824B /* ViewModel */,
 			);
 			path = MainPage;
 			sourceTree = "<group>";
@@ -620,8 +637,196 @@
 		3F9CA71129068BCF00F1824B /* TabView */ = {
 			isa = PBXGroup;
 			children = (
+				3F9CA71F2906915E00F1824B /* MyTask */,
+				3F9CA71E2906915600F1824B /* Menu */,
+				3F9CA71D2906915100F1824B /* AddTask */,
+				3F9CA71C2906914A00F1824B /* Profile */,
+				3F9CA71B290690FF00F1824B /* QuickNote */,
 			);
 			path = TabView;
+			sourceTree = "<group>";
+		};
+		3F9CA71B290690FF00F1824B /* QuickNote */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA73D290693CB00F1824B /* Model */,
+				3F9CA73C290693C700F1824B /* View */,
+				3F9CA73B290693C200F1824B /* ViewModel */,
+			);
+			path = QuickNote;
+			sourceTree = "<group>";
+		};
+		3F9CA71C2906914A00F1824B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA73A290693BA00F1824B /* Model */,
+				3F9CA739290693B600F1824B /* View */,
+				3F9CA738290693AE00F1824B /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		3F9CA71D2906915100F1824B /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA736290693A000F1824B /* Model */,
+				3F9CA737290693A600F1824B /* View */,
+				3F9CA7352906939B00F1824B /* ViewModel */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		3F9CA71E2906915600F1824B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA7342906939300F1824B /* Model */,
+				3F9CA7332906938A00F1824B /* View */,
+				3F9CA7322906938600F1824B /* ViewModel */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		3F9CA71F2906915E00F1824B /* MyTask */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA7312906937F00F1824B /* Model */,
+				3F9CA7302906937900F1824B /* View */,
+				3F9CA72F2906937400F1824B /* ViewModel */,
+			);
+			path = MyTask;
+			sourceTree = "<group>";
+		};
+		3F9CA72C2906935900F1824B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F9CA72D2906935E00F1824B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F9CA72E2906936700F1824B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA7202906917F00F1824B /* MainPage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F9CA72F2906937400F1824B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F9CA7302906937900F1824B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA722290691C700F1824B /* WorkListToday.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F9CA7312906937F00F1824B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F9CA7322906938600F1824B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F9CA7332906938A00F1824B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA7242906924900F1824B /* Menu.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F9CA7342906939300F1824B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F9CA7352906939B00F1824B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F9CA736290693A000F1824B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F9CA737290693A600F1824B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA7262906925900F1824B /* AddTask.swift */,
+				3F9CA741290694C800F1824B /* AddTaskAlert.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F9CA738290693AE00F1824B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F9CA739290693B600F1824B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA7282906926600F1824B /* Profile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F9CA73A290693BA00F1824B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F9CA73B290693C200F1824B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F9CA73C290693C700F1824B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA72A2906927000F1824B /* QuickNote.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F9CA73D290693CB00F1824B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		68F44D5CD884E00F4B5E87BE /* Pods */ = {
@@ -772,6 +977,8 @@
 				3F08148128FEF305002979E5 /* AppCoordinator.swift in Sources */,
 				3F0814DF28FF0751002979E5 /* EmptyModel.swift in Sources */,
 				3F0814E828FF0972002979E5 /* AuthTokenModel.swift in Sources */,
+				3F9CA7212906917F00F1824B /* MainPage.swift in Sources */,
+				3F9CA723290691C700F1824B /* WorkListToday.swift in Sources */,
 				3F08148E28FEFC52002979E5 /* ScreenModel.swift in Sources */,
 				3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */,
 				3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */,
@@ -781,10 +988,12 @@
 				3FB8253D2901A29700DEB13C /* SuccessfulReset.swift in Sources */,
 				3F4EFFA929018854001F6C51 /* ForgotPassword.swift in Sources */,
 				3F4B362E29016E820012AF6E /* LeftArrow.swift in Sources */,
+				3F9CA7292906926600F1824B /* Profile.swift in Sources */,
 				3F0814CB28FF0405002979E5 /* SignUpRequestModel.swift in Sources */,
 				3F0814D128FF0489002979E5 /* SignUpViewModel.swift in Sources */,
 				3F9CA70B29067EB300F1824B /* SuccessfulResetViewModel.swift in Sources */,
 				3F0814DD28FF073C002979E5 /* RestTemplate.swift in Sources */,
+				3F9CA72B2906927000F1824B /* QuickNote.swift in Sources */,
 				3F1D5DAD29002AEF00F407F5 /* WelcomeText.swift in Sources */,
 				3F0814DA28FF06FB002979E5 /* ValidationUtil.swift in Sources */,
 				3F65A7482900053F005A5D56 /* LocalizationConstants.swift in Sources */,
@@ -792,10 +1001,13 @@
 				3F08147728FEF1A8002979E5 /* SceneDelegate.swift in Sources */,
 				3F08149628FEFD71002979E5 /* Onboarding.swift in Sources */,
 				3F08149928FEFDB2002979E5 /* OnboardingFlowCoordinator.swift in Sources */,
+				3F9CA7252906924900F1824B /* Menu.swift in Sources */,
 				3F1ED0EA2902DEEB009400CD /* ForgotPasswordViewModel.swift in Sources */,
 				3F9CA7092906783500F1824B /* ResetPasswordViewModel.swift in Sources */,
 				3F08149128FEFCD8002979E5 /* Constants.swift in Sources */,
 				3F4B363229017AF70012AF6E /* SignInViewModel.swift in Sources */,
+				3F9CA742290694C800F1824B /* AddTaskAlert.swift in Sources */,
+				3F9CA7272906925900F1824B /* AddTask.swift in Sources */,
 				3F1D5DA629001D3E00F407F5 /* OnboardingViewModel.swift in Sources */,
 				3F4EFFAB290195EF001F6C51 /* ResetPassword.swift in Sources */,
 				3F0814CF28FF044E002979E5 /* SignUp.swift in Sources */,

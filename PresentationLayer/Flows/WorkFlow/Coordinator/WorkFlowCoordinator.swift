@@ -13,10 +13,9 @@ class WorkFlowCoordinator {
         self.navigationController = navigationController
     }
     
-//    func start() {
-//        let viewModel = <#viewModel#>
-//        let view = UIHostingController(rootView: <#View(viewModel: viewModel)#>)
-//        navigationController.isNavigationBarHidden = <#false#>
-//        navigationController.pushViewController(view, animated: <#true#>)
-//    }
+    func start() {
+        let view = UIHostingController(rootView: MainPage())
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.pushViewController(view, animated: false)
+    }
 }
