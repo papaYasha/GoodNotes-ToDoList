@@ -8,9 +8,13 @@ class RegistrationFlowCoordinator {
     
     var flowEndSubject = PassthroughSubject<Void, Never>()
     var cancellables = Set<AnyCancellable>()
-
+    
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+    }
+    
+    deinit {
+        print("RegistrationFlowCoordinator deinited")
     }
 
     func start() {
@@ -18,12 +22,13 @@ class RegistrationFlowCoordinator {
         let view = UIHostingController(rootView: SignUp(viewModel: viewModel))
         navigationController.isNavigationBarHidden = true
         navigationController.pushViewController(view, animated: false)
-        
-//        viewModel.signInButtonTappedSubject
-//            .sink { [weak self] in
-//                self?.flowEndSubject.send()
-//            }
-//            .store(in: &cancellables)
+                
+        viewModel.signInButtonTappedSubject
+            .sink { [weak self] in
+                self?.showSignInScene()
+                print("showSignInScene")
+            }
+            .store(in: &cancellables)
         
     }
     
@@ -31,11 +36,12 @@ class RegistrationFlowCoordinator {
         let viewModel = SignInViewModel()
         let view = UIHostingController(rootView: SignIn(viewModel: viewModel))
         navigationController.isNavigationBarHidden = true
-        navigationController.pushViewController(view, animated: false)
+        navigationController.pushViewController(view, animated: true)
         
         viewModel.forgotPasswordTappedSubject
             .sink { [weak self] in
-                self?.flowEndSubject.send()
+                self?.showForgotPasswordScene()
+                print("showForgotPasswordScene")
             }
             .store(in: &cancellables)
     }

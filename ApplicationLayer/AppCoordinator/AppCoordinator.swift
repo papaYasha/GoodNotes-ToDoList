@@ -6,6 +6,8 @@ class AppCoordinator {
 
     let window: UIWindow
     let navigationController = UINavigationController()
+    var childCoordinators = [Any]()
+
     
     var cancellable = Set<AnyCancellable>()
 
@@ -26,10 +28,11 @@ class AppCoordinator {
     private func showOnboardingFlow() {
         let onboardingFlowCoordinator = OnboardingFlowCoordinator(navigationController: navigationController)
         onboardingFlowCoordinator.start()
+        childCoordinators.append(onboardingFlowCoordinator)
+        
         onboardingFlowCoordinator.flowEndSubject
             .sink { [weak self] in
                 self?.showRegistrationFlow()
-                print(#function)
             }
             .store(in: &cancellable)
     }
