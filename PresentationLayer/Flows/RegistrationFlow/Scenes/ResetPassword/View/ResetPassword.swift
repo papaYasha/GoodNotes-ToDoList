@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ResetPassword: View {
+    
+    @StateObject var viewModel: ResetPasswordViewModel
         
     var body: some View {
         VStack {
@@ -13,7 +15,7 @@ struct ResetPassword: View {
             }
             ResetPasswordTextFields()
                 .padding(24.0)
-            ChangePasswordButton()
+            ChangePasswordButton(viewModel: viewModel)
                 .padding(.top, 50.0)
             Spacer()
         }
@@ -45,9 +47,12 @@ struct ResetPasswordTextFields: View {
 }
 
 struct ChangePasswordButton: View {
+    
+    @ObservedObject var viewModel: ResetPasswordViewModel
+    
     var body: some View {
         Button {
-            print("change password button tapped")
+            viewModel.changePasswordButtonTapped()
         } label: {
             Text(LocalizationConstants.changePasswordText)
                 .frame(width: getScreenBounds().width, height: 48, alignment: .center)
@@ -61,6 +66,6 @@ struct ChangePasswordButton: View {
 
 struct ResetPassword_Previews: PreviewProvider {
     static var previews: some View {
-        ResetPassword()
+        ResetPassword(viewModel: ResetPasswordViewModel())
     }
 }

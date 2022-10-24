@@ -18,7 +18,7 @@ struct SignIn: View {
 
             HStack {
                 Spacer()
-                ForgotPasswordButton()
+                ForgotPasswordButton(viewModel: viewModel)
             } .padding(.trailing, 35)
             Spacer()
             HStack {
@@ -29,9 +29,12 @@ struct SignIn: View {
 }
 
 struct ForgotPasswordButton: View {
+    
+    @ObservedObject var viewModel: SignInViewModel
+    
     var body: some View {
         Button {
-            print("forgot password button tapped")
+            viewModel.didTapForgotPasswordButton()
         } label: {
             Text(LocalizationConstants.signInForgotPasswordButtonText)
                 .foregroundColor(Color(Constants.customLightBlackColor))

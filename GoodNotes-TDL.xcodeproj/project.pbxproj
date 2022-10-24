@@ -49,6 +49,9 @@
 		3F54E6A528FEC51C00CD9B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */; };
 		3F65A7482900053F005A5D56 /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7472900053F005A5D56 /* LocalizationConstants.swift */; };
 		3F65A74B290005CD005A5D56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F65A74D290005CD005A5D56 /* Localizable.strings */; };
+		3F9CA7092906783500F1824B /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA7082906783500F1824B /* ResetPasswordViewModel.swift */; };
+		3F9CA70B29067EB300F1824B /* SuccessfulResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA70A29067EB300F1824B /* SuccessfulResetViewModel.swift */; };
+		3F9CA70F29068A6F00F1824B /* WorkFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA70E29068A6F00F1824B /* WorkFlowCoordinator.swift */; };
 		3FB8253D2901A29700DEB13C /* SuccessfulReset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB8253C2901A29700DEB13C /* SuccessfulReset.swift */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +101,9 @@
 		3F65A7472900053F005A5D56 /* LocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
 		3F65A74C290005CD005A5D56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F65A74E290005FF005A5D56 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3F9CA7082906783500F1824B /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
+		3F9CA70A29067EB300F1824B /* SuccessfulResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulResetViewModel.swift; sourceTree = "<group>"; };
+		3F9CA70E29068A6F00F1824B /* WorkFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkFlowCoordinator.swift; sourceTree = "<group>"; };
 		3FB8253C2901A29700DEB13C /* SuccessfulReset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulReset.swift; sourceTree = "<group>"; };
 		C43D7D8D4FF80B5F429F4F55 /* Pods-GoodNotes-TDL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodNotes-TDL.release.xcconfig"; path = "Target Support Files/Pods-GoodNotes-TDL/Pods-GoodNotes-TDL.release.xcconfig"; sourceTree = "<group>"; };
 		D3438BC9251526674B0B9EDD /* libPods-GoodNotes-TDL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoodNotes-TDL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -256,6 +262,8 @@
 		3F0814AE28FF0065002979E5 /* WorkFlow */ = {
 			isa = PBXGroup;
 			children = (
+				3F9CA70C29068A3900F1824B /* Scenes */,
+				3F9CA70D29068A4100F1824B /* Coordinator */,
 			);
 			path = WorkFlow;
 			sourceTree = "<group>";
@@ -384,6 +392,7 @@
 		3F0814BD28FF0242002979E5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3F9CA7082906783500F1824B /* ResetPasswordViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -406,6 +415,7 @@
 		3F0814C028FF024E002979E5 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3F9CA70A29067EB300F1824B /* SuccessfulResetViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -583,6 +593,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3F9CA70C29068A3900F1824B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA71029068BC100F1824B /* MainPage */,
+				3F9CA71129068BCF00F1824B /* TabView */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3F9CA70D29068A4100F1824B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3F9CA70E29068A6F00F1824B /* WorkFlowCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3F9CA71029068BC100F1824B /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		3F9CA71129068BCF00F1824B /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabView;
+			sourceTree = "<group>";
+		};
 		68F44D5CD884E00F4B5E87BE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -742,6 +783,7 @@
 				3F4B362E29016E820012AF6E /* LeftArrow.swift in Sources */,
 				3F0814CB28FF0405002979E5 /* SignUpRequestModel.swift in Sources */,
 				3F0814D128FF0489002979E5 /* SignUpViewModel.swift in Sources */,
+				3F9CA70B29067EB300F1824B /* SuccessfulResetViewModel.swift in Sources */,
 				3F0814DD28FF073C002979E5 /* RestTemplate.swift in Sources */,
 				3F1D5DAD29002AEF00F407F5 /* WelcomeText.swift in Sources */,
 				3F0814DA28FF06FB002979E5 /* ValidationUtil.swift in Sources */,
@@ -751,12 +793,14 @@
 				3F08149628FEFD71002979E5 /* Onboarding.swift in Sources */,
 				3F08149928FEFDB2002979E5 /* OnboardingFlowCoordinator.swift in Sources */,
 				3F1ED0EA2902DEEB009400CD /* ForgotPasswordViewModel.swift in Sources */,
+				3F9CA7092906783500F1824B /* ResetPasswordViewModel.swift in Sources */,
 				3F08149128FEFCD8002979E5 /* Constants.swift in Sources */,
 				3F4B363229017AF70012AF6E /* SignInViewModel.swift in Sources */,
 				3F1D5DA629001D3E00F407F5 /* OnboardingViewModel.swift in Sources */,
 				3F4EFFAB290195EF001F6C51 /* ResetPassword.swift in Sources */,
 				3F0814CF28FF044E002979E5 /* SignUp.swift in Sources */,
 				3F0814C928FF03CE002979E5 /* RegistrationFlowCoordinator.swift in Sources */,
+				3F9CA70F29068A6F00F1824B /* WorkFlowCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
