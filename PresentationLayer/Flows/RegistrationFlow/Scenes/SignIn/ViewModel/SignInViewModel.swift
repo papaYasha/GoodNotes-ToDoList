@@ -3,10 +3,11 @@ import Combine
 
 class SignInViewModel: ObservableObject {
     
-    var forgotPasswordButtonTappedSubject = PassthroughSubject<Void, Never>()
-
     @Published var login = ""
     @Published var password = ""
+    
+    var backButtonTappedSubject = PassthroughSubject<Void, Never>()
+    var forgotPasswordButtonTappedSubject = PassthroughSubject<Void, Never>()
     
     func didTapSignInButton() {
         print(#function)
@@ -18,5 +19,9 @@ class SignInViewModel: ObservableObject {
     
     func didTapForgotPasswordButton() {
         forgotPasswordButtonTappedSubject.send()
+    }
+    
+    func didTapBackButton() {
+        backButtonTappedSubject.send()
     }
 }

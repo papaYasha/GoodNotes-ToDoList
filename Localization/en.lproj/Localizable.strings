@@ -62,5 +62,15 @@
 "successful_reset_title" = "Succesful!";
 "successful_reset_message" = "You have succesfully change password. Please use your new passwords when logging in.";
 
+// MARK: - WORK LIST
+
+"today_tab_text" = "Today";
+"month_tab_text" = "Month";
+"incomplete_task_button_text" = "Incomplete task";
+"complete_task_button_text" = "Complete task";
+"all_task_button_text" = "All task";
+"work_list_navBar_title" = "Work List";
+
+
 
 

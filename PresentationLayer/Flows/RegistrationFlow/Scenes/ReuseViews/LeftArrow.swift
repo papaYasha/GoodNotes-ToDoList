@@ -1,10 +1,11 @@
 import SwiftUI
 
 struct LeftArrow: View {
+        
     var body: some View {
         HStack {
             Button {
-                print("arrow left button tapped")
+                print("dismiss VC")
             } label: {
                 Image(systemName: Constants.arrowLeftBackButton)
                     .resizable()

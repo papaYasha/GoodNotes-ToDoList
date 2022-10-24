@@ -66,4 +66,13 @@ struct LocalizationConstants {
     
     static let successfulResetTitle = R.string.localizable.successful_reset_title()
     static let successfulResetMessage = R.string.localizable.successful_reset_message()
+    
+    // MARK: - WORK LIST
+    
+    static let todayTabText = R.string.localizable.today_tab_text()
+    static let monthTabText = R.string.localizable.month_tab_text()
+    static let incompleteTaskButtonText = R.string.localizable.incomplete_task_button_text()
+    static let completeTaskButtonText = R.string.localizable.complete_task_button_text()
+    static let allTaskButtonText = R.string.localizable.all_task_button_text()
+    static let workListNavBarTitle = R.string.localizable.work_list_navBar_title()
 }
