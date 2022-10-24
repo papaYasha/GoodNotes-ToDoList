@@ -5,7 +5,7 @@ import Combine
 class OnboardingFlowCoordinator {
     
     var flowEndSubject = PassthroughSubject<Void, Never>()
-    var cancellables = Set<AnyCancellable>()
+    var cancelBag = Set<AnyCancellable>()
 
     var navigationController: UINavigationController?
 
@@ -22,6 +22,6 @@ class OnboardingFlowCoordinator {
             .sink { [weak self] in
                 self?.flowEndSubject.send()
             }
-            .store(in: &cancellables)
+            .store(in: &cancelBag)
     }
 }

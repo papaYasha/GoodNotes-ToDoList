@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct SuccessfulReset: View {
+    
+    @StateObject var viewModel: SuccessfulResetViewModel
+    
     var body: some View {
         VStack {
             Image(Constants.successfulResetImage)
@@ -12,11 +15,14 @@ struct SuccessfulReset: View {
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 20.0)
         }
+        .onTapGesture {
+            viewModel.tapGestureDidTapped()
+        }
     }
 }
 
 struct SuccessfulReset_Previews: PreviewProvider {
     static var previews: some View {
-        SuccessfulReset()
+        SuccessfulReset(viewModel: SuccessfulResetViewModel())
     }
 }

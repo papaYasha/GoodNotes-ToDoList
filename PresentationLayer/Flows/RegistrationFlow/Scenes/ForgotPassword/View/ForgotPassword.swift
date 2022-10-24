@@ -1,6 +1,9 @@
 import SwiftUI
 
 struct ForgotPassword: View {
+    
+    @StateObject var viewModel: ForgotPasswordViewModel
+    
     @State var username = ""
     
     var body: some View {
@@ -16,7 +19,7 @@ struct ForgotPassword: View {
                     .font(Font.custom(Constants.robotoMedium, size: 20))
                 TextField(LocalizationConstants.emailAddressPlaceholder, text: $username)
                 CustomDivider()
-                SendRequestButton()
+                SendRequestButton(viewModel: viewModel)
                     .padding(.top, 30.0)
             }
             .padding(.horizontal, 24.0)
@@ -26,9 +29,12 @@ struct ForgotPassword: View {
 }
 
 struct SendRequestButton: View {
+    
+    @ObservedObject var viewModel: ForgotPasswordViewModel
+    
     var body: some View {
         Button {
-            print("send request button tapped")
+            viewModel.didTapSendRequestButton()
         } label: {
             Text(LocalizationConstants.sendRequestText)
                 .frame(width: getScreenBounds().width, height: 48, alignment: .center)
@@ -37,11 +43,5 @@ struct SendRequestButton: View {
                 .font(Font.custom(Constants.robotoItalic, size: 20))
                 .background(Color(Constants.customLightRedColor))
         }
-    }
-}
-
-struct ForgotPassword_Previews: PreviewProvider {
-    static var previews: some View {
-        ForgotPassword()
     }
 }

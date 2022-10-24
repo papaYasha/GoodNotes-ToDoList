@@ -42,4 +42,9 @@ class AppCoordinator {
         let registrationFlowCoordinator = RegistrationFlowCoordinator(navigationController: navigationController)
         registrationFlowCoordinator.start()
     }
+    
+    private func showWorkFlow() {
+        navigationController.popToRootViewController(animated: false)
+        let workFlow = WorkFlowCoordinator(navigationController: navigationController)
+    }
 }
