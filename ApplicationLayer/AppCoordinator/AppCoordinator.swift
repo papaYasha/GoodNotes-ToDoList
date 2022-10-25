@@ -9,7 +9,7 @@ class AppCoordinator {
     var childCoordinators = [Any]()
 
     
-    var cancellable = Set<AnyCancellable>()
+    var cancelBag = Set<AnyCancellable>()
 
     init(window: UIWindow) {
         self.window = window
@@ -34,17 +34,24 @@ class AppCoordinator {
             .sink { [weak self] in
                 self?.showRegistrationFlow()
             }
-            .store(in: &cancellable)
+            .store(in: &cancelBag)
     }
     
     private func showRegistrationFlow() {
         navigationController.popToRootViewController(animated: false)
         let registrationFlowCoordinator = RegistrationFlowCoordinator(navigationController: navigationController)
         registrationFlowCoordinator.start()
+        
+        registrationFlowCoordinator.flowEndSubject
+            .sink { [weak self] in
+                self?.showWorkFlow()
+            }
+            .store(in: &cancelBag)
     }
     
     private func showWorkFlow() {
         navigationController.popToRootViewController(animated: false)
         let workFlow = WorkFlowCoordinator(navigationController: navigationController)
+        workFlow.start()
     }
 }

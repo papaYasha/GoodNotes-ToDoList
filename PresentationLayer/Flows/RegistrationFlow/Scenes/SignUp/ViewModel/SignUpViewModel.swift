@@ -8,7 +8,9 @@ class SignUpViewModel: ObservableObject {
     @Published var passwordValidation = false
     @Published var password = "qwertY2020"
     @Published var validation = false
+    
     let restTemplate = RestTemplate.INSTANCE
+    
     var signUpButtonTappedSubject = PassthroughSubject<Void, Never>()
     var signInButtonTappedSubject = PassthroughSubject<Void, Never>()
     

@@ -18,6 +18,7 @@ struct Constants {
     static let customLightBlueColor = "customLightBlue"
     static let onboardingBackgroundColor = "onboardingBackground"
     static let onboardingText = "onboardingText"
+    static let workListBackground = "workListBackground"
     
     // MARK: - Fonts
 

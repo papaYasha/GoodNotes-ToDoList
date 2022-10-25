@@ -16,7 +16,7 @@ class RegistrationFlowCoordinator {
     deinit {
         print("RegistrationFlowCoordinator deinited")
     }
-
+    
     func start() {
         let viewModel = SignUpViewModel()
         let view = UIHostingController(rootView: SignUp(viewModel: viewModel))
@@ -34,7 +34,7 @@ class RegistrationFlowCoordinator {
     private func showSignInScene() {
         let viewModel = SignInViewModel()
         let view = UIHostingController(rootView: SignIn(viewModel: viewModel))
-        navigationController.isNavigationBarHidden = false
+        navigationController.isNavigationBarHidden = true
         navigationController.pushViewController(view, animated: true)
         
         viewModel.forgotPasswordButtonTappedSubject
