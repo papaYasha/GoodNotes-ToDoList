@@ -61,6 +61,6 @@ struct TaskFilterAlert: View {
             .padding()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.primary.opacity(0.35))
+        .background(Color.primary.opacity(0.35)).ignoresSafeArea()
     }
 }

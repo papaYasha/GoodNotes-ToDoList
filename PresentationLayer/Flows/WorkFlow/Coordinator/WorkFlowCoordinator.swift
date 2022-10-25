@@ -14,8 +14,22 @@ class WorkFlowCoordinator {
     }
     
     func start() {
-        let view = UIHostingController(rootView: MainPage())
+        let viewModel = AddTaskViewModel()
+        let view = UIHostingController(rootView: MainPage(viewModel: viewModel))
         navigationController?.isNavigationBarHidden = true
         navigationController?.pushViewController(view, animated: false)
+        
+        viewModel.addTaskButtonTappedsubject
+            .sink {
+                self.showAddTask()
+            }
+            .store(in: &cancelBag)
+    }
+    
+    private func showAddTask() {
+        let viewModel = AddTaskViewModel()
+        let view = UIHostingController(rootView: AddTask())
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.pushViewController(view, animated: true)
     }
 }

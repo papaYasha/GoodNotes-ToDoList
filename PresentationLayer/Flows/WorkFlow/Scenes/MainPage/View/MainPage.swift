@@ -4,11 +4,7 @@ struct MainPage: View {
         
     @State var currentTab: Tab = .task
     @State var showAddTaskAlert = false
-    
-    
-    init() {
-        UITabBar.appearance().isHidden = true
-    }
+    @StateObject var viewModel: AddTaskViewModel
     
     var body: some View {
         ZStack{
@@ -60,7 +56,7 @@ struct MainPage: View {
                 )
             }
             if currentTab.rawValue == "add" {
-                AddTaskAlert(show: $showAddTaskAlert)
+                AddTaskAlert(show: $showAddTaskAlert, viewModel: viewModel)
             }
         }
         .edgesIgnoringSafeArea(.bottom)
@@ -69,7 +65,7 @@ struct MainPage: View {
 
 struct MainPage_Previews: PreviewProvider {
     static var previews: some View {
-        MainPage()
+        MainPage(viewModel: AddTaskViewModel())
     }
 }
 

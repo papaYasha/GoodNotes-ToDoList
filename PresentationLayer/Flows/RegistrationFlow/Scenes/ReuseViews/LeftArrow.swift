@@ -1,11 +1,14 @@
 import SwiftUI
 
 struct LeftArrow: View {
+    
+    //@IbservedObject var viewModel: AnyViewModel
         
     var body: some View {
         HStack {
             Button {
                 print("dismiss VC")
+                //viewModel.action()
             } label: {
                 Image(systemName: Constants.arrowLeftBackButton)
                     .resizable()

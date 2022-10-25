@@ -5,7 +5,7 @@ struct WorkListToday: View {
     @StateObject var viewModel = TaskViewModel()
     @State var currentTab: TaskTerm = .today
     @State var showTaskFilterMenu = false
-    let date = Date()
+    @State var currentDate = Date()
     
     var body: some View {
         ZStack {
@@ -98,6 +98,7 @@ struct WorkListToday: View {
                 )
                 TaskView()
             }
+            .background(Color(Constants.workListBackground))
             .ignoresSafeArea()
             
             if showTaskFilterMenu {

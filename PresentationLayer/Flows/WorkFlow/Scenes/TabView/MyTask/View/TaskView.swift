@@ -29,7 +29,7 @@ struct TaskView: View {
                         Image(task.isCompleted ? Constants.redRectangle : Constants.blueRectangle)
                     }
                     .padding(.vertical)
-                    .background(Color.white)
+                    .background(Color(Constants.onboardingBackgroundColor))
                     .contentShape(Rectangle())
                     .cornerRadius(5)
                     .shadow(color: .gray.opacity(0.1), radius: 2, x: 0, y: 9)

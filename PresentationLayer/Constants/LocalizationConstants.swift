@@ -75,4 +75,5 @@ struct LocalizationConstants {
     static let completeTaskButtonText = R.string.localizable.complete_task_button_text()
     static let allTaskButtonText = R.string.localizable.all_task_button_text()
     static let workListNavBarTitle = R.string.localizable.work_list_navBar_title()
+    static let newTaskNavBarTitle = R.string.localizable.new_task_nav_bar()
 }

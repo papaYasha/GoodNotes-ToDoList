@@ -42,6 +42,11 @@
 		3F4B362E29016E820012AF6E /* LeftArrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B362D29016E820012AF6E /* LeftArrow.swift */; };
 		3F4B363029017ADA0012AF6E /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B362F29017ADA0012AF6E /* SignIn.swift */; };
 		3F4B363229017AF70012AF6E /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B363129017AF70012AF6E /* SignInViewModel.swift */; };
+		3F4B5C9D2907E03600D48914 /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B5C9C2907E03600D48914 /* AddTaskViewModel.swift */; };
+		3F4B5C9F2907E23000D48914 /* AssigneeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B5C9E2907E23000D48914 /* AssigneeViewModel.swift */; };
+		3F4B5CA12907E24900D48914 /* AssigneeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B5CA02907E24900D48914 /* AssigneeModel.swift */; };
+		3F4B5CA42907F5ED00D48914 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B5CA32907F5ED00D48914 /* CustomDatePicker.swift */; };
+		3F4B5CA62907F7B500D48914 /* SketchForDataPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4B5CA52907F7B500D48914 /* SketchForDataPicker.swift */; };
 		3F4EFFA929018854001F6C51 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4EFFA829018854001F6C51 /* ForgotPassword.swift */; };
 		3F4EFFAB290195EF001F6C51 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4EFFAA290195EF001F6C51 /* ResetPassword.swift */; };
 		3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54E69828FEC51A00CD9B10 /* AppDelegate.swift */; };
@@ -49,6 +54,7 @@
 		3F54E6A528FEC51C00CD9B10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F54E6A428FEC51C00CD9B10 /* Assets.xcassets */; };
 		3F65A7482900053F005A5D56 /* LocalizationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F65A7472900053F005A5D56 /* LocalizationConstants.swift */; };
 		3F65A74B290005CD005A5D56 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F65A74D290005CD005A5D56 /* Localizable.strings */; };
+		3F77A94C2907FF9C003D9418 /* DateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77A94B2907FF9C003D9418 /* DateModel.swift */; };
 		3F9CA7092906783500F1824B /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA7082906783500F1824B /* ResetPasswordViewModel.swift */; };
 		3F9CA70B29067EB300F1824B /* SuccessfulResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA70A29067EB300F1824B /* SuccessfulResetViewModel.swift */; };
 		3F9CA70F29068A6F00F1824B /* WorkFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9CA70E29068A6F00F1824B /* WorkFlowCoordinator.swift */; };
@@ -102,6 +108,11 @@
 		3F4B362D29016E820012AF6E /* LeftArrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftArrow.swift; sourceTree = "<group>"; };
 		3F4B362F29017ADA0012AF6E /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		3F4B363129017AF70012AF6E /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		3F4B5C9C2907E03600D48914 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
+		3F4B5C9E2907E23000D48914 /* AssigneeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigneeViewModel.swift; sourceTree = "<group>"; };
+		3F4B5CA02907E24900D48914 /* AssigneeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssigneeModel.swift; sourceTree = "<group>"; };
+		3F4B5CA32907F5ED00D48914 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		3F4B5CA52907F7B500D48914 /* SketchForDataPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchForDataPicker.swift; sourceTree = "<group>"; };
 		3F4EFFA829018854001F6C51 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
 		3F4EFFAA290195EF001F6C51 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		3F54E69528FEC51A00CD9B10 /* GoodNotes-TDL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodNotes-TDL.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +123,7 @@
 		3F65A7472900053F005A5D56 /* LocalizationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationConstants.swift; sourceTree = "<group>"; };
 		3F65A74C290005CD005A5D56 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3F65A74E290005FF005A5D56 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3F77A94B2907FF9C003D9418 /* DateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModel.swift; sourceTree = "<group>"; };
 		3F9CA7082906783500F1824B /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
 		3F9CA70A29067EB300F1824B /* SuccessfulResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulResetViewModel.swift; sourceTree = "<group>"; };
 		3F9CA70E29068A6F00F1824B /* WorkFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkFlowCoordinator.swift; sourceTree = "<group>"; };
@@ -592,6 +604,15 @@
 			path = ReuseViews;
 			sourceTree = "<group>";
 		};
+		3F4B5CA22907F5A600D48914 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				3F4B5CA32907F5ED00D48914 /* CustomDatePicker.swift */,
+				3F4B5CA52907F7B500D48914 /* SketchForDataPicker.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
 		3F54E68C28FEC51A00CD9B10 = {
 			isa = PBXGroup;
 			children = (
@@ -737,6 +758,7 @@
 		3F9CA7302906937900F1824B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3F4B5CA22907F5A600D48914 /* DatePicker */,
 				3F9CA722290691C700F1824B /* WorkListToday.swift */,
 				3F9CA7432906E1EE00F1824B /* TaskFilterAlert.swift */,
 				3F9CA7492906E55400F1824B /* TaskView.swift */,
@@ -748,6 +770,7 @@
 			isa = PBXGroup;
 			children = (
 				3F9CA7472906E3F800F1824B /* TaskModel.swift */,
+				3F77A94B2907FF9C003D9418 /* DateModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -777,6 +800,8 @@
 		3F9CA7352906939B00F1824B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3F4B5C9C2907E03600D48914 /* AddTaskViewModel.swift */,
+				3F4B5C9E2907E23000D48914 /* AssigneeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -784,6 +809,7 @@
 		3F9CA736290693A000F1824B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F4B5CA02907E24900D48914 /* AssigneeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -985,6 +1011,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F08149328FEFD2D002979E5 /* OffsetScrollView.swift in Sources */,
+				3F4B5C9F2907E23000D48914 /* AssigneeViewModel.swift in Sources */,
+				3F77A94C2907FF9C003D9418 /* DateModel.swift in Sources */,
 				3F4B363029017ADA0012AF6E /* SignIn.swift in Sources */,
 				3F08148128FEF305002979E5 /* AppCoordinator.swift in Sources */,
 				3F0814DF28FF0751002979E5 /* EmptyModel.swift in Sources */,
@@ -993,6 +1021,7 @@
 				3F9CA723290691C700F1824B /* WorkListToday.swift in Sources */,
 				3F08148E28FEFC52002979E5 /* ScreenModel.swift in Sources */,
 				3F54E69928FEC51A00CD9B10 /* AppDelegate.swift in Sources */,
+				3F4B5C9D2907E03600D48914 /* AddTaskViewModel.swift in Sources */,
 				3F54E6A328FEC51A00CD9B10 /* GoodNotes_TDL.xcdatamodeld in Sources */,
 				3F1D5DA9290029AC00F407F5 /* CustomDivider.swift in Sources */,
 				3F0814E128FF075A002979E5 /* ErrorModel.swift in Sources */,
@@ -1007,11 +1036,13 @@
 				3F0814D128FF0489002979E5 /* SignUpViewModel.swift in Sources */,
 				3F9CA70B29067EB300F1824B /* SuccessfulResetViewModel.swift in Sources */,
 				3F0814DD28FF073C002979E5 /* RestTemplate.swift in Sources */,
+				3F4B5CA62907F7B500D48914 /* SketchForDataPicker.swift in Sources */,
 				3F9CA72B2906927000F1824B /* QuickNote.swift in Sources */,
 				3F1D5DAD29002AEF00F407F5 /* WelcomeText.swift in Sources */,
 				3F0814DA28FF06FB002979E5 /* ValidationUtil.swift in Sources */,
 				3F65A7482900053F005A5D56 /* LocalizationConstants.swift in Sources */,
 				3F9CA7482906E3F800F1824B /* TaskModel.swift in Sources */,
+				3F4B5CA12907E24900D48914 /* AssigneeModel.swift in Sources */,
 				3F0814CD28FF0413002979E5 /* SignUpResponseModel.swift in Sources */,
 				3F08147728FEF1A8002979E5 /* SceneDelegate.swift in Sources */,
 				3F08149628FEFD71002979E5 /* Onboarding.swift in Sources */,
@@ -1021,6 +1052,7 @@
 				3F9CA7462906E3E600F1824B /* TaskViewModel.swift in Sources */,
 				3F9CA7092906783500F1824B /* ResetPasswordViewModel.swift in Sources */,
 				3F08149128FEFCD8002979E5 /* Constants.swift in Sources */,
+				3F4B5CA42907F5ED00D48914 /* CustomDatePicker.swift in Sources */,
 				3F4B363229017AF70012AF6E /* SignInViewModel.swift in Sources */,
 				3F9CA742290694C800F1824B /* AddTaskAlert.swift in Sources */,
 				3F9CA7272906925900F1824B /* AddTask.swift in Sources */,
