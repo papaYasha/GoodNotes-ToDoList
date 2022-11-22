@@ -31,5 +31,17 @@ class WorkFlowCoordinator {
         let view = UIHostingController(rootView: AddTask())
         navigationController?.isNavigationBarHidden = true
         navigationController?.pushViewController(view, animated: true)
+        
+        viewModel.showCompleteTaskSubject
+            .sink {
+                self.showCompleteTask()
+            }
+            .store(in: &cancelBag)
+    }
+    
+    private func showCompleteTask() {
+        let view = UIHostingController(rootView: CompleteTask())
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.pushViewController(view, animated: true)
     }
 }

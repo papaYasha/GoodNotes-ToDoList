@@ -6,6 +6,7 @@ class AddTaskViewModel: ObservableObject {
     var addTaskButtonTappedsubject = PassthroughSubject<Void, Never>()
     var addQuickNoteTappedsubject = PassthroughSubject<Void, Never>()
     var addCheckListTappedsubject = PassthroughSubject<Void, Never>()
+    var showCompleteTaskSubject = PassthroughSubject<Void, Never>()
     
     func didTapAddTaskButton() {
         addTaskButtonTappedsubject.send()
@@ -18,5 +19,8 @@ class AddTaskViewModel: ObservableObject {
     func didTapCheckListButton() {
         addCheckListTappedsubject.send()
     }
-    
+
+    func didTapShowCompleteTaskButton() {
+        showCompleteTaskSubject.send()
+    }
 }

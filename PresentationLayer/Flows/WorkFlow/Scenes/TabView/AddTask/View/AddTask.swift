@@ -277,6 +277,9 @@ struct DueDate: View {
 }
 
 struct AddMemberAndTask: View {
+    
+    @ObservedObject var viewModel: AddTaskViewModel
+    
     var body: some View {
         VStack(alignment: .leading) {
             Text("Add Memder")
@@ -316,7 +319,7 @@ struct AddMemberAndTask: View {
             Spacer()
             
             Button {
-                print("add task")
+                viewModel.didTapShowCompleteTaskButton()
             } label: {
                 Text("Add Task")
                     .font(.custom(Constants.robotoItalic, size: 18))
